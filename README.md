@@ -20,4 +20,4 @@ Start the application
 
 To build the App for production
 
-`npm build`
+`npm run build`
