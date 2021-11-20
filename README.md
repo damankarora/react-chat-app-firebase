@@ -8,16 +8,16 @@ This is a public message board where people can Chat. This application is built 
 
 Clone the repo
 
-'git clone '
+`git clone https://github.com/damankarora/react-chat-app-firebase.git`
 
 Install dependencies
 
-'npm install'
+`npm install`
 
 Start the application
 
-'npm start'
+`npm start`
 
 To build the App for production
 
-'npm build'
+`npm build`
