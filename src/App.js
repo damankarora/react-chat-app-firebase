@@ -5,7 +5,7 @@ import 'firebase/firestore';
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
+import ChatRoom from './ChatRoom';
 
 
 
@@ -29,14 +29,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Hello
-        <br />
-        {user ? 'Logged In' : <SignIn />}
         {(user && <SignOut />)}
+        <br />        
       </header>
 
       <section>
-        
+        {user ? <ChatRoom app={app} currentUser={user} /> : <SignIn />}        
       </section>
     </div>
   );
